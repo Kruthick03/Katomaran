@@ -861,3 +861,5 @@ Before submitting to the Katomaran Hackathon, verify all of the following:
 - [ ] Application starts without errors on a fresh environment following these README steps
 - [ ] Database migration (`alembic upgrade head`) completes without errors
 This project is a part of a hackathon run by https://katomaran.com
+"# Katomaran" 
+"# Katomaran" 
