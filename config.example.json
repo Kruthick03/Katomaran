@@ -1,0 +1,78 @@
+{
+  "_comment": "SentinelTrack configuration. Copy this to config.json and adjust for your environment.",
+  "source": {
+    "type": "file",
+    "video_path": "data/sample.mp4",
+    "rtsp_uri": "",
+    "source_id": "cam_001",
+    "source_name": "Main Entrance"
+  },
+  "detection": {
+    "model_path": "models/yolov8n-face.pt",
+    "confidence_threshold": 0.45,
+    "iou_threshold": 0.45,
+    "detection_frame_skip": 2,
+    "min_face_width": 30,
+    "min_face_height": 30,
+    "input_size": 640
+  },
+  "recognition": {
+    "model_name": "buffalo_sc",
+    "similarity_threshold": 0.45,
+    "ambiguity_margin": 0.08,
+    "embedding_dimension": 512,
+    "min_detection_score": 0.55,
+    "normalize_embeddings": true
+  },
+  "tracker": {
+    "max_missed_frames": 15,
+    "min_track_age_frames": 3,
+    "iou_match_threshold": 0.3,
+    "max_age": 30
+  },
+  "session": {
+    "exit_confirmation_frames": 20,
+    "min_session_duration_seconds": 1.0,
+    "reentry_cooldown_seconds": 5.0
+  },
+  "evidence": {
+    "entries_dir": "logs/entries",
+    "exits_dir": "logs/exits",
+    "image_format": "jpg",
+    "image_quality": 90,
+    "crop_padding_fraction": 0.25,
+    "save_evidence": true,
+    "retention_days": 90
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "logs/events.log",
+    "max_bytes": 10485760,
+    "backup_count": 5,
+    "console_output": true
+  },
+  "rtsp": {
+    "reconnect_limit": 10,
+    "reconnect_delay_seconds": 3.0,
+    "connection_timeout_seconds": 10.0,
+    "read_timeout_seconds": 5.0
+  },
+  "metrics": {
+    "enabled": true,
+    "report_interval_frames": 100,
+    "log_memory": true,
+    "log_cpu": true
+  },
+  "database": {
+    "host_env": "SENTINEL_DB_HOST",
+    "port_env": "SENTINEL_DB_PORT",
+    "name_env": "SENTINEL_DB_NAME",
+    "user_env": "SENTINEL_DB_USER",
+    "password_env": "SENTINEL_DB_PASSWORD",
+    "pool_size": 5,
+    "max_overflow": 10,
+    "pool_timeout": 30,
+    "echo_sql": false
+  },
+  "headless": false
+}

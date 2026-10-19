@@ -1,0 +1,39 @@
+{
+  "collected_at": "2026-10-19T06:05:26.237170+00:00",
+  "elapsed_seconds": 146.09,
+  "started_at": "2026-10-19T06:03:00.150307+00:00",
+  "frames_processed": 1502,
+  "frames_dropped": 0,
+  "detections_total": 492,
+  "registrations": 0,
+  "recognitions": 14,
+  "entries": 14,
+  "exits": 13,
+  "errors": 0,
+  "reconnects": 0,
+  "fps_estimate": 10.28,
+  "drop_rate_pct": 0.0,
+  "detection_latency": {
+    "mean_ms": 0.049,
+    "max_ms": 1.962,
+    "count": 751
+  },
+  "recognition_latency": {
+    "mean_ms": 0.03,
+    "max_ms": 0.34,
+    "count": 1502
+  },
+  "db_write_latency": {
+    "mean_ms": null,
+    "max_ms": null,
+    "count": 0
+  },
+  "total_frame_latency": {
+    "mean_ms": 67.269,
+    "max_ms": 2020.231,
+    "count": 1502
+  },
+  "unique_identities": 82,
+  "total_sessions": 583,
+  "duration_seconds": 146.04
+}

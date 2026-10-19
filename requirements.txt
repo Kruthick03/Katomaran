@@ -1,0 +1,40 @@
+# SentinelTrack — Hackathon Submission Requirements
+# Python 3.10+ compatible; tested on Python 3.10.11, Windows 11
+
+# ── Core Computer Vision ─────────────────────────────────────────────────────
+ultralytics==8.3.40            # YOLOv8 face detection
+opencv-python==4.10.0.84       # Frame capture, annotation, image writing
+numpy==1.26.4                  # Numerical operations
+Pillow==10.4.0                 # Image validation and format conversion
+
+# ── Face Recognition ──────────────────────────────────────────────────────────
+insightface==0.7.3             # ArcFace-based face embeddings
+onnxruntime==1.19.2            # CPU inference runtime for InsightFace models
+# onnxruntime-gpu==1.19.2      # Uncomment if CUDA GPU is available
+
+# ── Database ──────────────────────────────────────────────────────────────────
+sqlalchemy==2.0.36             # ORM and query builder
+alembic==1.13.3                # Schema migrations
+psycopg2-binary==2.9.10        # PostgreSQL adapter (binary build for Windows)
+pgvector==0.3.6                # PostgreSQL vector similarity extension Python client
+
+# ── Configuration and Validation ─────────────────────────────────────────────
+pydantic==2.9.2                # Config schema validation
+pydantic-settings==2.6.1       # Environment variable loading
+python-dotenv==1.0.1           # Load .env files
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+scipy==1.14.1                  # Cosine similarity fallback
+psutil==6.1.0                  # CPU/memory metrics
+tqdm==4.67.1                   # Progress bars for batch operations
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.3.3
+pytest-cov==6.0.0              # Coverage reporting
+pytest-mock==3.14.0            # Mocking support
+pytest-asyncio==0.24.0         # Async test support (if needed)
+
+# ── Development and Tooling ───────────────────────────────────────────────────
+black==24.10.0                 # Code formatter
+isort==5.13.2                  # Import sorter
+flake8==7.1.1                  # Linter
