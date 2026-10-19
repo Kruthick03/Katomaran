@@ -827,7 +827,7 @@ SentinelTrack processes biometric data (face images and embeddings), which is su
 
 ## 22. Demonstration Video
 
-`[VIDEO PLACEHOLDER - Upload to YouTube/Google Drive and add link here]`
+"Youtube:https://youtu.be/LRogjFoAhwg"
 
 The demonstration video should show:
 1. System startup and model loading.
