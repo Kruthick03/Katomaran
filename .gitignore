@@ -24,12 +24,12 @@ ENV/
 .env
 *.env.local
 
-# Model files (large binary assets)
-models/*.pt
+# Model files
 models/*.onnx
 models/*.bin
 models/*.pack
 !models/.gitkeep
+!models/yolov8n-face.pt
 
 # Evidence / footage (biometric data — never commit)
 logs/entries/
@@ -38,11 +38,12 @@ logs/*.mp4
 logs/*.jpg
 logs/*.jpeg
 logs/*.png
-data/*.mp4
 data/*.avi
 data/*.mov
 data/*.mkv
 !data/.gitkeep
+!data/katomaran_sample.mp4
+!data/sample.mp4
 !logs/.gitkeep
 
 # IDE
